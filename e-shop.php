@@ -9,7 +9,7 @@ class EShop {
       public $prodotti = [];
 
       
-    public function addProduct(Product $nomeProdotto) {
+    public function addProduct(Product $nomeProdotto) { //aggiungi un prodotto
         $this->prodotti[] = $nomeProdotto;
     }
 
@@ -95,6 +95,7 @@ class User {
     private $id;
     public $nome;
     public $cognome;
+    private $card;
 
 }
 
@@ -103,10 +104,21 @@ class PremiumUser {
     // qui dentro potrebbe avere la definizione di una percentuale di 
     // sconto per ogni prodotto.
     public $sconto = 50;
+    private $id;
+    public $nome;
+    public $cognome;
+    private $card;
 
 
 }
-
+$primoAcquisto = new TechProduct();
+var_dump($primoAcquisto);
+echo "<hr/>";
+$altroAcquisto = new BeautyProduct();
+var_dump($altroAcquisto);
+echo "<hr/>";
+$another = new SportProduct();
+var_dump($another);
 
 // ----------------------------------------------
 
